@@ -16,6 +16,10 @@ header {
   justify-content: space-evenly;
   margin: 40px auto;
   }
+header > div {
+  flex: 1;
+  text-align: center;
+}
 div.black{
   background-color: #333333;
   border-radius: 5px;
