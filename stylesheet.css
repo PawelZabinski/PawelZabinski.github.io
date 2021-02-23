@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial;
-  background-color: #EEEEEE;
+  background-color: #444444;
   color: white;
   box-sizing: border-box;
   font-size: 30px;
@@ -11,7 +11,7 @@ header {
   background-color: #333333;
   width: 88%;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px grey;
+  box-shadow: 5px 5px 20px #111111;
   display: flex;
   justify-content: space-evenly;
   margin: 40px auto;
@@ -20,13 +20,13 @@ header > div {
   flex: 1;
   text-align: center;
 }
-div.black{
+.black{
   background-color: #333333;
   border-radius: 5px;
   padding: 5px;
   font-weight: 700;
 }
-div.red{
+.red{
   background-color: #FF6961;
   border-radius: 5px;
   padding: 5px;
@@ -43,9 +43,8 @@ section {
   padding: 10px;
   margin: 5px auto;
   color: #FF6961;
-  text-shadow: 5px 1px 50px black, 2px 2px 0 black;
   margin: 20px auto;
-  text-indent: 10px;
+  box-shadow: 1px 1px 10px rgb(250,80,80), 2px 2px 20px #333333;
 }
 article {
   background-color: #222222;
@@ -54,23 +53,41 @@ article {
   margin: auto;
   padding: 10px;
   text-shadow: none;
-  text-indent: 0;
 }
 footer {
   font-size: 23px;
   text-align: center;
   background-color: #333333;
   padding: 20px;
+  min-height: 100%;
 }
-span {
+span.footer {
   color: grey;
-  font-weight: bolder;
+  font-weight: 100;
+}
+.selected:hover {
+  color: #333333;
+  cursor: pointer;
 }
 a:hover {
   color: #FF6961;
+  cursor: pointer;
 }
-
-
-
-
-
+span {
+  font-weight: 700;
+  color: #FF6961;
+}
+section h1 {
+  font-variant: small-caps;
+}
+main {
+  flex-grow: 1;
+}
+span a {
+  color: grey;
+}
+span a:hover {
+  color: grey;
+  font-weight: 900;
+  cursor: default;
+}
